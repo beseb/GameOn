@@ -1,5 +1,13 @@
-# Projet GameOn
-1. Forkez ce repo ;
-2. Il est conseillé d'utiliser VisualStudio Code et vous pouvez utiliser Docker, mais ce n'est pas obligatoire ;
-3. Il n'y a aucune dépendance ;
-4. Vous ne devez utiliser que du CSS personnalisé et du JavaScript pur, sans jQuery, Bootstrap ou autre librairie.
+# GameOn
+
+## Description
+- 4th project of OpenClassrooms's React / JS Developper Path
+- Made with 💖in HTML / CSS / Vanilla JS only !
+- Launch in your browser or in your local server with Live server ! 
+
+### Issues solved :
+-
+-
+-
+-
+-
