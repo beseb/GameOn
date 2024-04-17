@@ -1,5 +1,5 @@
 import { checkInputValue, checkIfLocationSelected, checkIfTermsAccepted, checkIfUserIsOver18, errorMessage, regexName, regexEmail, regexQuantity} from './function.js';
-import { closeModal } from './modal.js';
+import { closeModal, showSuccessModal } from './modal.js';
 
 // Get the form
 const form = document.getElementById('form');
@@ -49,9 +49,8 @@ function validate(e){
     
     // Validate form
     if(isFirstNameValid && isLastNameValid && isEmailValid && isQuantityValid && isBirthdateValid && isLocationValid && isTermsValid){
-    successModal.style.display = "block";
     form.reset();
-    closeModal();  
+    showSuccessModal();  
     }
     
 }

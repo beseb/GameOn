@@ -47,8 +47,6 @@ export function checkIfUserIsOver18(element, message){
     diff = new Date(diff);
 
     const userAge = Math.abs(diff.getUTCFullYear() - 1970);
-    console.log(userAge);
-    console.log(birthdate);
     // Check if birthYear is realistic...
     const currentYear = new Date().getFullYear();
     const birthYear = birthdate.getFullYear();
