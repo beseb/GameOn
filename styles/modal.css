@@ -182,7 +182,12 @@ main {
   color: #fff;
   padding-top: 10px;
 }
-
+/*  Custom style for modal closed */
+.--hidden{
+  animation-name: modalclose;
+  animation-duration: var(--modal-duration);
+}
+/*  */
 .modal-body {
   padding: 15px 8%;
   margin: 15px auto;
@@ -226,12 +231,12 @@ input {
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
 }
-/* 
+
 input[data-error]::after {
     content: attr(data-error);
     font-size: 0.4em;
     color: red;
-} */
+}
 .checkbox-label,
 .checkbox2-label {
   position: relative;
@@ -516,7 +521,7 @@ footer {
     text-align: center;
   }
 }
-
+/* Modal Animation */
 @keyframes modalopen {
   from {
     opacity: 0;
@@ -526,4 +531,12 @@ footer {
     opacity: 1;
   }
 }
-
+@keyframes modalclose{
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+}
