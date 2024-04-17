@@ -187,7 +187,6 @@ main {
   color: #000;
   min-height: 600px ;
   text-wrap: pretty;
-  text-spacing: 1em;
   padding: 1em;
   color: white;
   flex-direction: column;
@@ -195,6 +194,11 @@ main {
   align-items: center;
   
   gap: 2em;
+}
+.successModal h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
 }
 /*  Custom style for modal closed */
 .--hidden{
@@ -352,6 +356,10 @@ input[data-error]::after {
   color: #fff;
   cursor: pointer;
   border: 0;
+}
+.btn-successModal{
+  position:absolute;
+  bottom: 0;
 }
 /* custom select styles */
 .custom-select {

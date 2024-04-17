@@ -26,11 +26,14 @@ closeBtnSuccessModal.addEventListener('click', closeModal);
 // Launch modal form
 export function launchModal() {
   modalbg.style.display = "block";
+  content.classList.remove("--hidden");
+  successModal.classList.remove("--hidden");
+
 }
 // Close modal form
 export function closeModal() {
-  content.classList.toggle("--hidden");
-  successModal.classList.toggle("--hidden");
+  content.classList.add("--hidden");
+  successModal.classList.add("--hidden");
   setTimeout(function() {
     modalbg.style.display = "none";
   }, 500); 
