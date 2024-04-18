@@ -61,8 +61,10 @@ export function checkIfUserIsOver18(element, message){
 
 // Message error
 export const errorMessage = {
-    name: 'Minimum 2 caractères, maximum 15 caractères. Les chiffres et caractères spéciaux différents de - ne sont pas autorisés',
-    email: 'Veuillez renseigner une adresse mail valide.',
+    firstname: 'Veuillez entrer un prénom entre 2 et 15 caractères. Les chiffres et caractères spéciaux différents de "-" ne sont pas autorisés',
+    lastname: 'Veuillez entrer un nom entre 2 et 15 caractères. Les chiffres et caractères spéciaux différents de "-" ne sont pas autorisés',
+   
+    email: 'Veuillez renseigner une adresse mail valide',
     birthdate: 'Vous devez avoir plus de 18 ans pour participer',
     quantity: 'Veuillez renseigner un nombre entre 0 et 99',
     locations: 'Veuillez sélectionner une ville',

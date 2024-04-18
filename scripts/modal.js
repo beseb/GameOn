@@ -1,11 +1,4 @@
-function editNav() {
-  let x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+
 
 // DOM Elements
 const modalbg = document.querySelector(".bground");
@@ -16,12 +9,13 @@ const content = document.querySelector(".content");
 const successModal = document.querySelector('.successModal');
 const form = document.getElementById('form');
 
-
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 // close modal event
 closeBtn.addEventListener("click", closeModal);
 closeBtnSuccessModal.addEventListener('click', closeModal);
+
+
 
 // Launch modal form
 export function launchModal() {

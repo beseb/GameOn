@@ -1,9 +1,19 @@
 import { checkInputValue, checkIfLocationSelected, checkIfTermsAccepted, checkIfUserIsOver18, errorMessage, regexName, regexEmail, regexQuantity} from './function.js';
-import { closeModal, showSuccessModal } from './modal.js';
+import {  showSuccessModal } from './modal.js';
+
+// Responsive Navbar
+const btnMobileMenu = document.querySelector(".btn-mobile-menu");
+const navBar = document.querySelector("nav")
+btnMobileMenu.addEventListener("click", openNavBar);
+
+// Function to open the NavBar in mobile screen
+export function openNavBar(){
+    navBar.classList.toggle("navBar--open");
+    btnMobileMenu.classList.toggle("btn-mobile-menu--open");
+}
 
 // Get the form
 const form = document.getElementById('form');
-const successModal = document.querySelector('.successModal');
 const firstNameField = document.getElementById('first');
 const lastNameField = document.getElementById('last');
 const emailField = document.getElementById('email');
@@ -39,8 +49,8 @@ function validate(e){
     e.preventDefault();
     
     // Check if the form is valid
-    const isFirstNameValid = checkInputValue(regexName, firstNameField, errorMessage.name);
-    const isLastNameValid = checkInputValue(regexName, lastNameField, errorMessage.name);
+    const isFirstNameValid = checkInputValue(regexName, firstNameField, errorMessage.firstname);
+    const isLastNameValid = checkInputValue(regexName, lastNameField, errorMessage.lastname);
     const isEmailValid = checkInputValue(regexEmail, emailField, errorMessage.email);
     const isQuantityValid = checkInputValue(regexQuantity, quantityField, errorMessage.quantity);
     const isBirthdateValid = checkIfUserIsOver18(birthdateField, errorMessage.birthdate);

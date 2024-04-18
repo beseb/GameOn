@@ -16,24 +16,31 @@
       <div class="header-logo">
       <img alt="logo" src="./assets/images/Logo.png" width="auto" height="auto" />
     </div>
-    <div class="main-navbar">
-      
-      <a href="#" class="active"><span>Accueil</span></a>
-      <a href="#"><span>Détails de l'évènement</span></a>
-      <a href="#"><span>À propos</span></a>
-      <a href="#"><span>Contact</span></a>
-      <a href="#"><span>Évènements passés</span></a>
-      <a href="javascript:void(0);" class="icon" onclick="editNav()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    </div>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item" >
+          <a href="#" class="active"><span>Détails de l'évènement</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><span>À propos</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><span>Contact</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><span>Évènements passés</span></a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" aria-label="open / close menu" class="btn-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </button>
   </div>
     <main>
       <div class="hero-section">
         <div class="hero-content">
           <h1 class="hero-headline">
-            Marathon national<br>
+            Marathon national <br>
             de jeux vidéos
           </h1>
           <p class="hero-text">
@@ -234,5 +241,14 @@
     <script src="./scripts/modal.js" type="module">
     </script>
     <script src="./scripts/app.js" type="module"></script>
+    <!-- <script> function editNav() {
+      let x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className +=("responsive");
+      } 
+      else {
+        x.className = "topnav";
+      }
+    }</script> -->
   </body>
 </html>
