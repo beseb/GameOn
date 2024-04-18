@@ -6,8 +6,7 @@
 - Launch in your browser or in your local server with Live server ! 
 
 ### Issues solved :
--
--
--
--
--
+- Form validation
+- Form submission
+- Responsive design
+- Menu burger in mobile version

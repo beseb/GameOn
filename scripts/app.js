@@ -6,7 +6,7 @@ const btnMobileMenu = document.querySelector(".btn-mobile-menu");
 const navBar = document.querySelector("nav")
 btnMobileMenu.addEventListener("click", openNavBar);
 
-// Function to open the NavBar in mobile screen
+// Function to open the NavBar in mobile screen, all in CSS with the classList.toggle
 export function openNavBar(){
     navBar.classList.toggle("navBar--open");
     btnMobileMenu.classList.toggle("btn-mobile-menu--open");
