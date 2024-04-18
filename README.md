@@ -1,5 +1,5 @@
 # GameOn
-
+![HOMEPAGE](./assets/images/HOMEPAGEpng.png)
 ## Description
 - 4th project of OpenClassrooms's React / JS Developper Path
 - Made with 💖in HTML / CSS / Vanilla JS only !
