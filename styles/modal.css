@@ -262,12 +262,11 @@ main {
   font-weight: bold;
   text-align: center;
 }
-/*  Custom style for modal closed */
+// Custom style for modal closed 
 .--hidden{
   animation-name: modalclose;
   animation-duration: var(--modal-duration);
 }
-/*  */
 .modal-body {
   padding: 15px 8%;
   margin: 15px auto;
