@@ -6,6 +6,7 @@ const btnMobileMenu = document.querySelector(".btn-mobile-menu");
 const navBar = document.querySelector("nav")
 btnMobileMenu.addEventListener("click", openNavBar);
 
+
 // Function to open the NavBar in mobile screen, all in CSS with the classList.toggle
 export function openNavBar(){
     navBar.classList.toggle("navBar--open");
@@ -24,10 +25,10 @@ const termsCheckbox = document.getElementById('checkbox1');
 
 // Check inputs with event listeners & functions
 firstNameField.addEventListener('input', function(){
-    checkInputValue(regexName, firstNameField, errorMessage.name);
+    checkInputValue(regexName, firstNameField, errorMessage.firstname);
 });
 lastNameField.addEventListener('input', function(){
-    checkInputValue(regexName, lastNameField, errorMessage.name);
+    checkInputValue(regexName, lastNameField, errorMessage.lastname);
 });
 emailField.addEventListener('input', function(){
     checkInputValue(regexEmail, emailField, errorMessage.email);
