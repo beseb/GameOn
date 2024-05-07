@@ -24,25 +24,25 @@ const locations = document.querySelectorAll('input[name="location"]');
 const termsCheckbox = document.getElementById('checkbox1');
 
 // Check inputs with event listeners & functions
-firstNameField.addEventListener('input', function(){
+firstNameField.addEventListener('change', function(){
     checkInputValue(regexName, firstNameField, errorMessage.firstname);
 });
-lastNameField.addEventListener('input', function(){
+lastNameField.addEventListener('change', function(){
     checkInputValue(regexName, lastNameField, errorMessage.lastname);
 });
-emailField.addEventListener('input', function(){
+emailField.addEventListener('change', function(){
     checkInputValue(regexEmail, emailField, errorMessage.email);
 });
-quantityField.addEventListener('input', function(){
+quantityField.addEventListener('change', function(){
     checkInputValue(regexQuantity, quantityField, errorMessage.quantity);
 });
 birthdateField.addEventListener('input', function(){
     checkIfUserIsOver18(birthdateField, errorMessage.birthdate);
 });
-termsCheckbox.addEventListener('input', function(){
+termsCheckbox.addEventListener('change', function(){
     checkIfTermsAccepted(termsCheckbox, errorMessage.terms);
 });
-locations.forEach(location => location.addEventListener('input', function(){
+locations.forEach(location => location.addEventListener('change', function(){
     checkIfLocationSelected(locations, errorMessage.locations);
 }));
 // Check if the form is valid & validate form
